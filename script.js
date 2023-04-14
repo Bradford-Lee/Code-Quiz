@@ -30,7 +30,7 @@ startButton.addEventListener("click", function(){
 
 // The startGame function is called when the start quiz button is clicked
 function startGame() {
-    timerCount = 10;
+    timerCount = 60;
     startTimer()
     question1()
   }
@@ -80,4 +80,97 @@ function question1() {
     button2.addEventListener("click", incorrect);
     button3.addEventListener("click", incorrect);
     button4.addEventListener("click", incorrect);
+    function correct() {
+        result.textContent = "Correct!";
+        question2()
+    }
+    function incorrect() {
+        result.textContent = "Incorrect!";
+        question2()
+    }
+}
+
+
+function question2() {
+    question.textContent = "Who is your mommy?";
+    button1.textContent = "Brie Larson";
+    button2.textContent = "Gal Gadot";
+    button3.textContent = "KristinaMama";
+    button4.textContent = "Mother Mary";
+    button1.addEventListener("click", incorrect);
+    button2.addEventListener("click", incorrect);
+    button3.addEventListener("click", correct);
+    button4.addEventListener("click", incorrect);
+    function correct() {
+        result.textContent = "Correct!";
+        question3()
+    }
+    function incorrect() {
+        result.textContent = "Incorrect!";
+        question3()
+    }
+
+}
+
+function question3() {
+    question.textContent = "Who is not an Avenger?";
+    button1.textContent = "Wong";
+    button2.textContent = "Thor";
+    button3.textContent = "Modok";
+    button4.textContent = "Rocket";
+    button1.addEventListener("click", incorrect);
+    button2.addEventListener("click", incorrect);
+    button3.addEventListener("click", correct);
+    button4.addEventListener("click", incorrect);
+    function correct() {
+        result.textContent = "Correct!";
+        question4()
+    }
+    function incorrect() {
+        result.textContent = "Incorrect!";
+        question4()
+    }
+
+}
+
+function question4() {
+    question.textContent = "Who is Gamora?";
+    button1.textContent = "Asgardian";
+    button2.textContent = "Kree";
+    button3.textContent = "Thanos' daughter";
+    button4.textContent = "Thanos' lover";
+    button1.addEventListener("click", incorrect);
+    button2.addEventListener("click", incorrect);
+    button3.addEventListener("click", correct);
+    button4.addEventListener("click", incorrect);
+    function correct() {
+        result.textContent = "Correct!";
+        question5()
+    }
+    function incorrect() {
+        result.textContent = "Incorrect!";
+        question5()
+    }
+
+}
+
+function question5() {
+    question.textContent = "What do you do?";
+    button1.textContent = "Code";
+    button2.textContent = "Cry";
+    button3.textContent = "Party";
+    button4.textContent = "Sleep";
+    button1.addEventListener("click", incorrect);
+    button2.addEventListener("click", correct);
+    button3.addEventListener("click", incorrect);
+    button4.addEventListener("click", incorrect);
+    function correct() {
+        result.textContent = "Correct!";
+        endQuiz()
+    }
+    function incorrect() {
+        result.textContent = "Incrrect!";
+        endQuiz()
+    }
+
 }
