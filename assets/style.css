@@ -1,0 +1,89 @@
+/* Hide certain sections of the page */
+.hide {
+    display: none;
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    font-size: 2em;
+    padding: 50px;
+    justify-content: space-between;
+    color: black;
+}
+
+/* Stles for the timer*/
+.timer {
+    text-align: center;
+    color: blue;
+}
+
+/* Styles for the title */
+.title {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    color: #3268BD
+}
+
+/* Styles for the first word in title */
+#marvel {
+    font-family: "BentonSans";
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+/* Styles for the instructions section */
+.instructions {
+    padding-left: 250px;
+    padding-right: 250px;
+    color: #00991F;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Styles for the start quiz button */
+#start-block {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Stles for the quiz section*/
+#quiz-block {
+    font-size: 3em;
+    text-align: center;
+    padding: 100px;
+}
+
+/* Styles for the quiz question and correct/incorrect result */
+.question {
+    font-size: 25px;
+    color: #3268BD
+}
+
+/* Styles the correct/incorrect result */
+.result {
+    font-size: 25px;
+}
+
+/* Styles for the buttons */
+#start-button , .button1 , .button2 , .button3 , .button4 {
+    padding: 1% 2%;
+    color: black;
+    border: groove;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "Comic Sans MS";
+  }
+
+/* Styles of the score section */
+#submit-block {
+    text-align: center;
+}
+
+/* Remove bullet points when logging scores */
+li {
+    list-style: none;
+}
